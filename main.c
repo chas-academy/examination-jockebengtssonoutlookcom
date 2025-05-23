@@ -78,15 +78,15 @@ int main(){
               if (highest == results[4]){
                 printf("%s", person_5);}
     if (float_total > results[0]){
-        printf("\n%s", person_1);}
+        printf("%s", person_1);}
       if (float_total > results[1]){
-        printf("\n%s", person_2);}
+        printf("%s", person_2);}
           if (float_total > results[2]){
-            printf("\n%s", person_3);}
+            printf("%s", person_3);}
               if (float_total > results[3]){
-                printf("\n%s", person_4);}
+                printf("%s", person_4);}
                   if (float_total > results[4]){
-                    printf("\n%s", person_5);}
+                    printf("%s", person_5);}
 
 
 
