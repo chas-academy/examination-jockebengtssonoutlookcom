@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <ctype.h>
 // char stor_bokstav(char a){
 //     char bokstav = a;
 //     if (bokstav != toupper(bokstav)){
@@ -15,18 +15,18 @@ int main(){
     int results[5];
     float result[5];                                               // hitta högsta värdet i results, printa namn på högsta
     int total = 0;
-    for (j = 0; j < 5; j++){
-        scanf("%s", person[j]);
 
+    for (j = 0; j < 5; j++){
+        scanf("%9s", person[j]);
         for (i = 0; i < 13; i++){
             scanf("%d", &prov[j][i]);
             results[j] += prov[j][i];
             total += prov[j][i];}
-        printf("\nthis is prov %s, result: %d total: %d ", person[j], results[j], total);
+        // printf("\nthis is prov %s, result: %d total: %d ", person[j], results[j], total);
         result[j] = (float)results[j] / 13;}
 
-    float float_total = (float)total / 65;
-    printf("\n%.2f", float_total);
+    float float_total = (float)total / 65;                                // ändra till float
+    // printf("\n%.2f", float_total);
     float test = result[0];
 
     for(int a=1; a<5; a++){                                              //kolla efter högsta värdet
@@ -63,25 +63,25 @@ int main(){
 // printf("%s", need_help[0][10]);
 // printf("%s", need_help[1][10]);
     if (test == result[0]){
-        printf("%s", person[0]);}
+        printf("%s\n", person[0]);}
       if (test == result[1]){
-          printf("%s", person[1]);}    
+          printf("%s\n", person[1]);}    
         if (test == result[2]){
-            printf("%s", person[2]);}
+            printf("%s\n", person[2]);}
           if (test == result[3]){
-            printf("%s", person[3]);}
+            printf("%s\n", person[3]);}
               if (test == result[4]){
-                printf("%s", person[4]);}
+                printf("%s\n", person[4]);}
     if (float_total > result[0]){
-        printf("%s", person[0]);}
+        printf("%s\n", person[0]);}
       if (float_total > result[1]){
-        printf("%s", person[1]);}
+        printf("%s\n", person[1]);}
           if (float_total > result[2]){
-            printf("%s", person[2]);}
+            printf("%s\n", person[2]);}
               if (float_total > result[3]){
-                printf("%s", person[3]);}
+                printf("%s\n", person[3]);}
                   if (float_total > result[4]){
-                    printf("%s", person[4]);}
+                    printf("%s\n", person[4]);}
 
       return 0 ;
 }
