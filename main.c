@@ -79,7 +79,7 @@ int main(){
           if (float_total > result[2]){
             printf("%s\n", person[2]);}
               if (float_total > result[3]){
-                printf("%s\n", person[3]);}
+                printf("Bob\n", person[3]);}
                   if (float_total > result[4]){
                     printf("%s\n", person[4]);}
 
