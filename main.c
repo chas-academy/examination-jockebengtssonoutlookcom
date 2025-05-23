@@ -18,8 +18,8 @@ int main(){
     float results[5];                                               // hitta högsta värdet i results, printa namn på högsta
 
   scanf("%s", person_1);
-      if (person_1[0] != toupper(person_1[0])){
-        person_1[0] = toupper(person_1[0]);}
+     // if (person_1[0] != toupper(person_1[0])){
+      //  person_1[0] = toupper(person_1[0]);}
     for (int i = 0; i < 13; i++){
             scanf("%d", &prov_1[i]);
       result_1 += prov_1[i];} results[0] = (float)result_1 / 13;         //create float
